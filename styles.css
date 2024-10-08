@@ -1,0 +1,80 @@
+/* Impostazioni generali per il body e layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Sfondo gradiente utilizzando il colore dei blocchi del countdown */
+    background: linear-gradient(to bottom, #e0e4ff, #cbd3f5); /* Gradiente usando tonalità del blu chiaro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px; /* Larghezza ridotta per una migliore adattabilità mobile */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Padding ridotto */
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 20px; /* Dimensione del font ridotta */
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.time-box {
+    flex: 1;
+    background: #e0e4ff; /* Colore dei blocchi del countdown */
+    border-radius: 10px;
+    padding: 10px; /* Padding ridotto */
+    margin: 3px; /* Margine ridotto */
+    font-size: 14px; /* Dimensione del font per le etichette ridotta */
+    font-weight: 600;
+    color: #34495e;
+}
+
+.time-box span {
+    font-size: 22px; /* Dimensione del font per i numeri ridotta */
+    display: block;
+    color: #2980b9;
+}
+
+.image-container {
+    margin-top: 15px; /* Margine ridotto sopra l'immagine */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile responsivo per dispositivi mobili */
+@media screen and (max-width: 600px) {
+    .time-box {
+        padding: 8px;
+        margin: 2px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .time-box span {
+        font-size: 18px;
+    }
+}
